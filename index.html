@@ -1,0 +1,130 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Body Styling */
+body {
+font-family: 'Arial', sans-serif;
+color: #333;
+line-height: 1.6;
+background-color: #f3f8fb; /* Soft blue background for the whole page */
+}
+/* Navbar Styling */
+#navbar {
+position: fixed;
+top: 0;
+width: 100%;
+background-color: #283593; /* Deep indigo blue for navbar */
+color: #ffffff;
+padding: 1rem;
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+#navbar a {
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+#navbar a:hover {
+
+color: #ffcc80; /* Soft orange accent for hover effect */
+}
+/* Welcome Section */
+#welcome-section {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #e3f2fd; /* Light sky blue */
+padding: 20px;
+text-align: center;
+}
+#welcome-section h1 {
+font-size: 3rem;
+color: #1a237e; /* Rich dark blue */
+margin-bottom: 0.5rem;
+}
+#welcome-section p {
+font-size: 1.2rem;
+color: #5c6bc0; /* Soothing lavender */
+}
+/* Projects Section */
+#projects {
+padding: 2rem;
+background-color: #f9fbe7; /* Very light pastel yellow */
+text-align: center;
+}
+#projects h2 {
+font-size: 2.5rem;
+color: #3949ab; /* Medium indigo */
+margin-bottom: 1.5rem;
+}
+
+.project-tile {
+margin: 1rem auto;
+padding: 1rem;
+border: 1px solid #d1c4e9; /* Light purple border */
+background-color: #ffffff;
+max-width: 500px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+.project-tile a {
+font-size: 1.3rem;
+color: #1e88e5; /* Calming blue */
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+.project-tile a:hover {
+color: #ff8a65; /* Soft coral for hover */
+}
+.project-tile p {
+font-size: 1rem;
+color: #666;
+margin-top: 5px;
+}
+/* Contact Section */
+#contact {
+padding: 2rem;
+background-color: #e8eaf6; /* Light lavender blue */
+text-align: center;
+}
+#contact h2 {
+font-size: 2rem;
+
+color: #1a237e; /* Rich dark blue */
+margin-bottom: 1rem;
+}
+#contact p {
+font-size: 1.2rem;
+color: #3949ab; /* Indigo for text */
+}
+/* Profile Link Styling */
+#profile-link {
+color: #42a5f5; /* Soft blue for profile link */
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+#profile-link:hover {
+color: #ffcc80; /* Orange accent on hover */
+}
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+#welcome-section h1 {
+font-size: 2rem;
+}
+.project-tile {
+font-size: 0.9rem;
+}
+#navbar {
+flex-direction: column;
+gap: 0.5rem;
+}
+}
